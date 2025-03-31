@@ -1,0 +1,132 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles globaux */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header .subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .message {
+    margin-bottom: 40px;
+  }
+  
+  .message h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .message p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .gallery h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-grid img:hover {
+    transform: scale(1.1);
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+  
+  /* Styles pour le diaporama */
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none; /* Par défaut, masquer toutes les slides */
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .message h2 {
+      font-size: 1.5rem;
+    }
+  
+    .gallery h2 {
+      font-size: 1.5rem;
+    }
+  
+    .slideshow-container {
+      height: 250px; /* Ajuster la hauteur pour les petits écrans */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .message h2 {
+      font-size: 1.3rem;
+    }
+  
+    .gallery h2 {
+      font-size: 1.3rem;
+    }
+  
+    .slideshow-container {
+      height: 200px; /* Ajuster encore plus pour les très petits écrans */
+    }
+  }

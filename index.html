@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Félicitations pour l'Aïd à ma famille aimée">
+  <title>Félicitations pour l'Aïd</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- Diaporama -->
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="https://via.placeholder.com/800x400?text=Photo+1" alt="Photo 1">
+      </div>
+      <div class="slide fade">
+        <img src="https://via.placeholder.com/800x400?text=Photo+2" alt="Photo 2">
+      </div>
+      <div class="slide fade">
+        <img src="https://via.placeholder.com/800x400?text=Photo+3" alt="Photo 3">
+      </div>
+    </div>
+
+    <h1>🎉 Félicitations pour l'Aïd 🎉</h1>
+    <p class="subtitle">À ma famille chérie, que cette fête soit pleine de bonheur et de paix.</p>
+  </header>
+
+  <main>
+    <section class="message">
+      <h2>Chers membres de ma famille,</h2>
+      <p>
+        Que cette fête de l'Aïd soit l'occasion de renforcer nos liens d'amour et de partage.
+        Qu'elle apporte dans vos vies joie, santé, prospérité et bonheur.
+      </p>
+      <p>
+        Puisse Allah accepter toutes nos bonnes actions et nous combler de Ses bénédictions.
+      </p>
+    </section>
+
+    <section class="gallery">
+      <h2>Galerie de souvenirs</h2>
+      <div class="image-grid">
+        <img src="https://via.placeholder.com/300" alt="Souvenir 1">
+        <img src="https://via.placeholder.com/300" alt="Souvenir 2">
+        <img src="https://via.placeholder.com/300" alt="Souvenir 3">
+        <img src="https://via.placeholder.com/300" alt="Souvenir 4">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 - Félicitations pour l'Aïd</p>
+  </footer>
+
+  <!-- Script pour le diaporama -->
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slideshow-container .slide');
+
+    function showSlides() {
+      // Masquer toutes les slides
+      slides.forEach(slide => slide.style.display = 'none');
+
+      // Afficher la slide actuelle
+      slideIndex++;
+      if (slideIndex > slides.length) slideIndex = 1; // Revenir au début si on dépasse la dernière slide
+      slides[slideIndex - 1].style.display = 'block';
+
+      // Changer de slide après 3 secondes
+      setTimeout(showSlides, 3000);
+    }
+
+    // Démarrer le diaporama
+    showSlides();
+  </script>
+</body>
+</html>
